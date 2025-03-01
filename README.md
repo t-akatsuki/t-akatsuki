@@ -1,73 +1,129 @@
-現在は主にRPGツクールMV/MZ用プラグイン/ツールの作成・公開を行っています。  
+<!-- Style Sheet -->
+<style>
+    .mb05 {
+        margin-bottom: 0.5em;
+    }
+</style>
+
+## :memo: About
+現在は自身の制作の合間にRPGツクールMV/MZ用プラグイン/ツールの作成・公開を行っています。
+
 シンプルで使いやすい、他と組み合わせて使いやすい、制作者が色々工夫して使える、を第一に制作しています。
 
-## :electric_plug:RPGツクールMZ用プラグイン
+## :gift: Main Projects
 
-RPGツクールMV用プラグインを移植予定です!
+> [!IIMPORTANT]
+> 制作物の配布および利用方法の解説は[公式Webサイト](https://www.utakata-no-yume.net)にて行っています。
+> 利用の際はそちらからお願いいたします。
+> GitHubではソースコードの管理・公開を行っていますが、これらは開発者向けとなります。
 
-<!-- UTA_CommonSaveMZ -->
-<a href="https://github.com/t-akatsuki/UTA_CommonSaveMZ" target="_blank">
-    <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=t-akatsuki&repo=UTA_CommonSaveMZ">
-</a>
-<!-- UTA_MessageSkipMZ -->
-<a href="https://github.com/t-akatsuki/UTA_MessageSkipMZ" target="_blank">
-    <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=t-akatsuki&repo=UTA_MessageSkipMZ">
-</a>
+> [!NOTE]
+> RPGツクールMZ用プラグインのバグ報告などについては[公式Webサイトのお問い合わせフォーム](https://www.utakata-no-yume.net/contact/rpgmvmz/)からお願いいたします。
 
-## :electric_plug:RPGツクールMV用プラグイン
+<!--
+<div class="mb05">
+    <a href="https://github.com/t-akatsuki/****" target="_blank">
+        <picture>
+            <source srcset="https://github-readme-stats.vercel.app/api/pin/?username=t-akatsuki&repo=****&description_lines_count=1&lang=ja&theme=dark" media="(prefers-color-scheme: dark)">
+            <source srcset="https://github-readme-stats.vercel.app/api/pin/?username=t-akatsuki&repo=****&description_lines_count=1&lang=ja&theme=light" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)">
+            <img src="https://github-readme-stats.vercel.app/api/pin/?username=t-akatsuki&repo=****&description_lines_count=1&lang=ja&theme=light">
+        </picture>
+    </a>
+</div>
+-->
 
-<!-- UTA_CommonSaveMV -->
-<a href="https://github.com/t-akatsuki/UTA_CommonSaveMV" target="_blank">
-    <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=t-akatsuki&repo=UTA_CommonSaveMV">
-</a>
-<!-- UTA_MessageSkipMV -->
-<a href="https://github.com/t-akatsuki/UTA_MessageSkipMV" target="_blank">
-    <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=t-akatsuki&repo=UTA_MessageSkipMV">
-</a>
-<!-- UTA_EncounterControlMV -->
-<a href="https://github.com/t-akatsuki/UTA_EncounterControlMV" target="_blank">
-    <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=t-akatsuki&repo=UTA_EncounterControlMV">
-</a>
-<!-- UTA_ExpandEquipTypeSkillMV -->
-<a href="https://github.com/t-akatsuki/UTA_ExpandEquipTypeSkillMV" target="_blank">
-    <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=t-akatsuki&repo=UTA_ExpandEquipTypeSkillMV">
-</a>
-<!-- UTA_UnderpassCeilingMV -->
-<a href="https://github.com/t-akatsuki/UTA_UnderpassCeilingMV" target="_blank">
-    <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=t-akatsuki&repo=UTA_UnderpassCeilingMV">
-</a>
+### :electric_plug: RPGツクールMZ(RPG Maker MZ)用プラグイン
+現在はプレビュー版としていますが、ご利用いただけます。
 
-----
+<!-- t-akatsuki/UTA_CommonSaveMZ -->
+<div class="mb05">
+    <a href="https://github.com/t-akatsuki/UTA_CommonSaveMZ" target="_blank">
+        <picture>
+            <source srcset="https://github-readme-stats.vercel.app/api/pin/?username=t-akatsuki&repo=UTA_CommonSaveMZ&description_lines_count=1&lang=ja&theme=dark" media="(prefers-color-scheme: dark)">
+            <source srcset="https://github-readme-stats.vercel.app/api/pin/?username=t-akatsuki&repo=UTA_CommonSaveMZ&description_lines_count=1&lang=ja&theme=light" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)">
+            <img src="https://github-readme-stats.vercel.app/api/pin/?username=t-akatsuki&repo=UTA_CommonSaveMZ&description_lines_count=1&lang=ja&theme=light">
+        </picture>
+    </a>
+</div>
 
-## :sushi:GitHub Stats
+<!-- t-akatsuki/UTA_MessageSkipMZ -->
+<div class="mb05">
+    <a href="https://github.com/t-akatsuki/UTA_MessageSkipMZ" target="_blank">
+        <picture>
+            <source srcset="https://github-readme-stats.vercel.app/api/pin/?username=t-akatsuki&repo=UTA_MessageSkipMZ&description_lines_count=1&lang=ja&theme=dark" media="(prefers-color-scheme: dark)">
+            <source srcset="https://github-readme-stats.vercel.app/api/pin/?username=t-akatsuki&repo=UTA_MessageSkipMZ&description_lines_count=1&lang=ja&theme=light" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)">
+            <img src="https://github-readme-stats.vercel.app/api/pin/?username=t-akatsuki&repo=UTA_MessageSkipMZ&description_lines_count=1&lang=ja&theme=light">
+        </picture>
+    </a>
+</div>
+
+### :electric_plug: RPGツクールMV(RPG Maker MV)用プラグイン
+まだまだ需要あるようですので、順次バージョンアップ予定です。
+
+<!-- t-akatsuki/UTA_CommonSaveMV -->
+<div class="mb05">
+    <a href="https://github.com/t-akatsuki/UTA_CommonSaveMV" target="_blank">
+        <picture>
+            <source srcset="https://github-readme-stats.vercel.app/api/pin/?username=t-akatsuki&repo=UTA_CommonSaveMV&description_lines_count=1&lang=ja&theme=dark" media="(prefers-color-scheme: dark)">
+            <source srcset="https://github-readme-stats.vercel.app/api/pin/?username=t-akatsuki&repo=UTA_CommonSaveMV&description_lines_count=1&lang=ja&theme=light" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)">
+            <img src="https://github-readme-stats.vercel.app/api/pin/?username=t-akatsuki&repo=UTA_CommonSaveMV&description_lines_count=1&lang=ja&theme=light">
+        </picture>
+    </a>
+</div>
+
+<!-- t-akatsuki/UTA_MessageSkipMV -->
+<div class="mb05">
+    <a href="https://github.com/t-akatsuki/UTA_MessageSkipMV" target="_blank">
+        <picture>
+            <source srcset="https://github-readme-stats.vercel.app/api/pin/?username=t-akatsuki&repo=UTA_MessageSkipMV&description_lines_count=1&lang=ja&theme=dark" media="(prefers-color-scheme: dark)">
+            <source srcset="https://github-readme-stats.vercel.app/api/pin/?username=t-akatsuki&repo=UTA_MessageSkipMV&description_lines_count=1&lang=ja&theme=light" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)">
+            <img src="https://github-readme-stats.vercel.app/api/pin/?username=t-akatsuki&repo=UTA_MessageSkipMV&description_lines_count=1&lang=ja&theme=light">
+        </picture>
+    </a>
+</div>
+
+<!-- t-akatsuki/UTA_EncounterControlMV -->
+<div class="mb05">
+    <a href="https://github.com/t-akatsuki/UTA_EncounterControlMV" target="_blank">
+        <picture>
+            <source srcset="https://github-readme-stats.vercel.app/api/pin/?username=t-akatsuki&repo=UTA_EncounterControlMV&description_lines_count=1&lang=ja&theme=dark" media="(prefers-color-scheme: dark)">
+            <source srcset="https://github-readme-stats.vercel.app/api/pin/?username=t-akatsuki&repo=UTA_EncounterControlMV&description_lines_count=1&lang=ja&theme=light" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)">
+            <img src="https://github-readme-stats.vercel.app/api/pin/?username=t-akatsuki&repo=UTA_EncounterControlMV&description_lines_count=1&lang=ja&theme=light">
+        </picture>
+    </a>
+</div>
+
+## :sushi: Github Status
 
 <!-- github-readme-stats -->
-<a href="https://github-readme-stats.vercel.app/api?username=t-akatsuki&show_icons=true&count_private=true&hide=prs,issues,contribs" target="_blank">
-    <img align="center" src="https://github-readme-stats.vercel.app/api?username=t-akatsuki&show_icons=true&count_private=true&hide=prs,issues,contribs">
-</a>
-<a href="https://github-readme-stats.vercel.app/api?username=t-akatsuki&show_icons=true&count_private=true&hide=prs,issues,contribs" target="_blank">
-    <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=T-Akatsuki&count_private=true&layout=compact">
-</a>
+<!-- Most Used Languages -->
+<picture>
+    <source srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=T-Akatsuki&count_private=true&layout=donut&langs_count=8&theme=dark" media="(prefers-color-scheme: dark)">
+    <source srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=T-Akatsuki&count_private=true&layout=donut&langs_count=8&theme=light" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)">
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=T-Akatsuki&count_private=true&layout=donut&langs_count=8&theme=light">
+</picture>
 
-- 非公開のものは自前Gitさーばーで管理しているので偏っています。。。
+> [!WARNING]
+> - Private Repositoryは集計に含まれていません。
+> - 非公開のものは自前のGitサーバーで管理している為、グラフ表記上は偏っています。
 
-----
-
-## :zap:Skills
-
+## :zap: Skill Stack
+アプリケーション開発からWeb開発まで半フルスタックで頑張っています。  
 興味あるものは積極的に雑多に色々触っています!
 
-- Web Development
-    - JavaScript / TypeScript
-    - Python
-    - PHP
-    - HTML5 / CSS3
-    - Apache / Nginx
-    - MySQL / PostgreSQL
-- Application Development
-    - C++
-    - C#
-- Infrastructure as Code
-    - Docker
-    - Ansible
-    - Vagrant
+### Desktop Application Development Skills
+![Desktop Application Development Skills](https://skillicons.dev/icons?i=cpp,cs,visualstudio)
+
+### Web Frontend Development Skills
+![Web Frontend Development Skills](https://skillicons.dev/icons?i=html,css,sass,js,ts,electron,vscode)
+
+### Web Backend Development Skills
+![Web Backend Development Skills](https://skillicons.dev/icons?i=py,django,flask,php,mysql,postgres,vscode)
+
+### Infrastuructures/IaC
+![My Skills](https://skillicons.dev/icons?i=aws,docker,ansible)
+
+## :globe_with_meridians: Links
+- [うたかたの夢跡](https://www.utakata-no-yume.net)
+- [X(Twitter)](https://x.com/t_akatsuki)
+- [Bluesky](https://bsky.app/profile/t-akatsuki.utakata-no-yume.net)
