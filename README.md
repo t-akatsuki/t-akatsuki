@@ -86,7 +86,7 @@
     </a>
 </div>
 
-## :sushi: Github Status
+## :star: Github Status
 
 <!-- github-readme-stats -->
 <!-- Most Used Languages -->
@@ -104,31 +104,31 @@
 アプリケーション開発からWeb開発まで半フルスタックで頑張っています。  
 興味あるものは積極的に雑多に色々触っています!
 
-### Desktop Application Development Skills
+### :computer: Desktop Application Development Skills
 <picture>
     <source srcset="https://skillicons.dev/icons?i=cpp,cs,visualstudio" media="(*)">
     <img src="https://skillicons.dev/icons?i=cpp,cs,visualstudio" alt="Desktop Application Development Skills">
 </picture>
 
-### Web Frontend Development Skills
+### :spaghetti: Web Frontend Development Skills
 <picture>
     <source srcset="https://skillicons.dev/icons?i=html,css,sass,js,ts,electron,vscode" media="(*)">
     <img src="https://skillicons.dev/icons?i=html,css,sass,js,ts,electron,vscode" alt="Web Frontend Development Skills">
 </picture>
 
-### Web Backend Development Skills
+### :ramen: Web Backend Development Skills
 <picture>
     <source srcset="https://skillicons.dev/icons?i=py,django,flask,php,mysql,postgres,vscode" media="(*)">
     <img src="https://skillicons.dev/icons?i=py,django,flask,php,mysql,postgres,vscode" alt="Web Backend Development Skills">
 </picture>
 
-### Infrastuructures/IaC Skills
+### :cloud: Infrastuructures/IaC Skills
 <picture>
     <source srcset="https://skillicons.dev/icons?i=aws,docker,ansible" media="(*)">
     <img src="https://skillicons.dev/icons?i=aws,docker,ansible" alt="Infrastuructures/IaC Skills">
 </picture>
 
-## :globe_with_meridians: Links
+## :link: Links
 - <a href="https://www.utakata-no-yume.net" target="_blank">うたかたの夢跡</a>
 - <a href="https://x.com/t_akatsuki" target="_blank">X(Twitter)</a>
 - <a href="https://bsky.app/profile/t-akatsuki.utakata-no-yume.net" target="_blank">Bluesky</a>
