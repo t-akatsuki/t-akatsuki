@@ -1,10 +1,3 @@
-<!-- Style Sheet -->
-<style>
-    .mb05 {
-        margin-bottom: 0.5em;
-    }
-</style>
-
 ## :memo: About
 現在は自身の制作の合間にRPGツクールMV/MZ用プラグイン/ツールの作成・公開を行っています。
 
