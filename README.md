@@ -106,7 +106,7 @@
 
 ### Desktop Application Development Skills
 <picture>
-    <source srcset="https://skillicons.dev/icons?i=cpp,cs,visualstudio" type="image/svg+xml">
+    <source srcset="https://skillicons.dev/icons?i=cpp,cs,visualstudio" media="*">
     <img src="https://skillicons.dev/icons?i=cpp,cs,visualstudio" alt="Desktop Application Development Skills">
 </picture>
 
