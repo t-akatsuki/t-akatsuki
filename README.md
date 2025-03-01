@@ -106,25 +106,25 @@
 
 ### Desktop Application Development Skills
 <picture>
-    <source srcset="https://skillicons.dev/icons?i=cpp,cs,visualstudio" media="*">
+    <source srcset="https://skillicons.dev/icons?i=cpp,cs,visualstudio" media="(*)">
     <img src="https://skillicons.dev/icons?i=cpp,cs,visualstudio" alt="Desktop Application Development Skills">
 </picture>
 
 ### Web Frontend Development Skills
 <picture>
-    <source srcset="https://skillicons.dev/icons?i=html,css,sass,js,ts,electron,vscode" type="image/svg+xml">
+    <source srcset="https://skillicons.dev/icons?i=html,css,sass,js,ts,electron,vscode" media="(*)">
     <img src="https://skillicons.dev/icons?i=html,css,sass,js,ts,electron,vscode" alt="Web Frontend Development Skills">
 </picture>
 
 ### Web Backend Development Skills
 <picture>
-    <source srcset="https://skillicons.dev/icons?i=py,django,flask,php,mysql,postgres,vscode" type="image/svg+xml">
+    <source srcset="https://skillicons.dev/icons?i=py,django,flask,php,mysql,postgres,vscode" media="(*)">
     <img src="https://skillicons.dev/icons?i=py,django,flask,php,mysql,postgres,vscode" alt="Web Backend Development Skills">
 </picture>
 
 ### Infrastuructures/IaC Skills
 <picture>
-    <source srcset="https://skillicons.dev/icons?i=aws,docker,ansible" type="image/svg+xml">
+    <source srcset="https://skillicons.dev/icons?i=aws,docker,ansible" media="(*)">
     <img src="https://skillicons.dev/icons?i=aws,docker,ansible" alt="Infrastuructures/IaC Skills">
 </picture>
 
