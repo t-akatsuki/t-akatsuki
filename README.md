@@ -6,12 +6,12 @@
 ## :gift: Main Projects
 
 > [!IMPORTANT]
-> 制作物の配布および利用方法の解説は<a href="https://www.utakata-no-yume.net" target="_blank">公式Webサイト</a>にて行っています。
+> 制作物の配布および利用方法の解説は<a href="https://www.utakata-no-yume.net" target="_blank">Webサイト</a>にて行っています。
 > 利用の際はそちらからお願いいたします。
 > GitHubではソースコードの管理・公開を行っていますが、これらは開発者向けとなります。
 
 > [!NOTE]
-> RPGツクールMZ用プラグインのバグ報告などについては<a href="https://www.utakata-no-yume.net/contact/rpgmvmz/" target="_blank">公式Webサイトのお問い合わせフォーム</a>からお願いいたします。
+> RPGツクールMZ用プラグインのバグ報告などについては<a href="https://www.utakata-no-yume.net/contact/rpgmvmz/" target="_blank">Webサイトのお問い合わせフォーム</a>からお願いいたします。
 
 <!--
 <div class="mb05">
