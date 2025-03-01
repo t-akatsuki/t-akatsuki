@@ -5,7 +5,7 @@
 
 ## :gift: Main Projects
 
-> [!IIMPORTANT]
+> [!IMPORTANT]
 > 制作物の配布および利用方法の解説は[公式Webサイト](https://www.utakata-no-yume.net)にて行っています。
 > 利用の際はそちらからお願いいたします。
 > GitHubではソースコードの管理・公開を行っていますが、これらは開発者向けとなります。
