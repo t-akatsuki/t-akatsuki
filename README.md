@@ -6,12 +6,12 @@
 ## :gift: Main Projects
 
 > [!IMPORTANT]
-> 制作物の配布および利用方法の解説は[公式Webサイト](https://www.utakata-no-yume.net)にて行っています。
+> 制作物の配布および利用方法の解説は<a href="https://www.utakata-no-yume.net" target="_blank">公式Webサイト</a>にて行っています。
 > 利用の際はそちらからお願いいたします。
 > GitHubではソースコードの管理・公開を行っていますが、これらは開発者向けとなります。
 
 > [!NOTE]
-> RPGツクールMZ用プラグインのバグ報告などについては[公式Webサイトのお問い合わせフォーム](https://www.utakata-no-yume.net/contact/rpgmvmz/)からお願いいたします。
+> RPGツクールMZ用プラグインのバグ報告などについては<a href="https://www.utakata-no-yume.net/contact/rpgmvmz/" target="_blank">公式Webサイトのお問い合わせフォーム</a>からお願いいたします。
 
 <!--
 <div class="mb05">
@@ -117,6 +117,6 @@
 ![My Skills](https://skillicons.dev/icons?i=aws,docker,ansible)
 
 ## :globe_with_meridians: Links
-- [うたかたの夢跡](https://www.utakata-no-yume.net)
-- [X(Twitter)](https://x.com/t_akatsuki)
-- [Bluesky](https://bsky.app/profile/t-akatsuki.utakata-no-yume.net)
+- <a href="https://www.utakata-no-yume.net" target="_blank">うたかたの夢跡</a>
+- <a href="https://x.com/t_akatsuki" target="_blank">X(Twitter)</a>
+- <a href="https://bsky.app/profile/t-akatsuki.utakata-no-yume.net" target="_blank">Bluesky</a>
