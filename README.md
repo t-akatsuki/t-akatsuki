@@ -105,16 +105,24 @@
 興味あるものは積極的に雑多に色々触っています!
 
 ### Desktop Application Development Skills
-![Desktop Application Development Skills](https://skillicons.dev/icons?i=cpp,cs,visualstudio)
+<picture>
+    <img src="https://skillicons.dev/icons?i=cpp,cs,visualstudio" alt="Desktop Application Development Skills">
+</picture>
 
 ### Web Frontend Development Skills
-![Web Frontend Development Skills](https://skillicons.dev/icons?i=html,css,sass,js,ts,electron,vscode)
+<picture>
+    <img src="https://skillicons.dev/icons?i=html,css,sass,js,ts,electron,vscode" alt="Web Frontend Development Skills">
+</picture>
 
 ### Web Backend Development Skills
-![Web Backend Development Skills](https://skillicons.dev/icons?i=py,django,flask,php,mysql,postgres,vscode)
+<picture>
+    <img src="https://skillicons.dev/icons?i=py,django,flask,php,mysql,postgres,vscode" alt="Web Backend Development Skills">
+</picture>
 
-### Infrastuructures/IaC
-![My Skills](https://skillicons.dev/icons?i=aws,docker,ansible)
+### Infrastuructures/IaC Skills
+<picture>
+    <img src="https://skillicons.dev/icons?i=aws,docker,ansible" alt="Infrastuructures/IaC Skills">
+</picture>
 
 ## :globe_with_meridians: Links
 - <a href="https://www.utakata-no-yume.net" target="_blank">うたかたの夢跡</a>
