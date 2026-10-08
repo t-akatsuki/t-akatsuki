@@ -110,7 +110,9 @@ li {
 }
 
 h1 {
-  font-size: 24px;
+  position: relative;
+  box-sizing: border-box;
+  font-size: 22px;
   color: transparent;
   background-image: linear-gradient(45deg, rgb(200 255 255), rgb(20 200 255));
   background-clip: text;
@@ -124,9 +126,10 @@ h1 {
 h2 {
   position: relative;
   box-sizing: border-box;
-  margin: 0 0 0.5rem 0;
+  font-size: 20px;
   border-image: linear-gradient(to right, rgb(30 130 170), rgb(0 55 85)) 1;
   border-bottom: 3px solid;
+  margin: 0 0 0.5rem 0;
   text-align: center;
   letter-spacing: 0.1em;
   text-indent: 0.1em;
