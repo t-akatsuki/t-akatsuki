@@ -1,0 +1,443 @@
+@charset "UTF-8";
+
+/* ------------------------------------------------------------------------- */
+/* 変数の定義 */
+/* ------------------------------------------------------------------------- */
+:root {
+  /* ベース文字色 */
+  --base-font-color: #334444;
+
+  /* リンク文字色 */
+  --link-color: #227799;
+  --link-hover-color: #33aabb;
+
+  /* 最大横幅 */
+  --max-width-for-pc: 1024px;
+
+  /* product cardの最小横幅 */
+  --product-card-min-width: 300px;
+}
+
+/* ------------------------------------------------------------------------- */
+/* フォント関連設定 */
+/* ------------------------------------------------------------------------- */
+/*
+ * Noto Sans JPはAndroid/Windowsで標準搭載されるようになったので、
+ * ローカルに存在する場合は利用させる
+ */
+@font-face {
+  font-family: "Local Noto Sans JP";
+  font-style: normal;
+  font-display: swap;
+  src:
+    /* Windows preinstalled */
+    local("Noto Sans JP"),
+    /* Android preinstalled */
+    local("Noto Sans CJK JP Regular");
+}
+
+/*
+ * アイコンフォントとしてMaterial Symbolsを利用する
+ * Apache License 2.0
+ * https://fonts.google.com/icons
+ */
+@font-face {
+  font-family: "Material Symbols Outlined";
+  font-style: normal;
+  src:
+    url(/assets/fonts/MaterialSymbolsOutlined[FILL,GRAD,opsz,wght].woff2) format("woff2");
+}
+
+/* ------------------------------------------------------------------------- */
+/* 基礎タグの設定 */
+/* ------------------------------------------------------------------------- */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-height: 100dvh;
+  margin: 0;
+
+  font-family: 
+    "Helvetica Neue",
+    Arial,
+    "Local Noto Sans JP",
+    "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans",
+    sans-serif;
+  font-size: 16px;
+  color: var(--base-font-color);
+  line-height: 1.5;
+
+  scroll-behavior: smooth;
+
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+/* ドラッグ時 */
+::selection {
+  background: rgba(50, 160, 200, 0.5);
+}
+
+a {
+  color: var(--link-color);
+  transition: color 0.25s ease;
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--link-color);
+}
+
+a:hover,
+a:visited:hover {
+  color: var(--link-hover-color);
+  text-decoration: underline;
+}
+
+p {
+  margin: 0 0 1em 0;
+}
+
+ul {
+  margin: 0.5em 0;
+  padding: 0 0 0 1.2em;
+}
+
+li {
+  list-style-type: disc;
+}
+
+h1 {
+  font-size: 24px;
+  color: transparent;
+  background-image: linear-gradient(45deg, rgb(200 255 255), rgb(20 200 255));
+  background-clip: text;
+  margin: 0.75rem 0 0.5rem 0;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-indent: 0.1em;
+  white-space: nowrap;
+}
+
+h2 {
+  position: relative;
+  box-sizing: border-box;
+  margin: 0 0 0.5rem 0;
+  border-image: linear-gradient(to right, rgb(30 130 170), rgb(0 55 85)) 1;
+  border-bottom: 3px solid;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-indent: 0.1em;
+}
+
+/* ------------------------------------------------------------------------- */
+/* ヘッダー関連 */
+/* ------------------------------------------------------------------------- */
+header {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: var(--max-width-for-pc);
+  margin: 0 auto;
+}
+
+/* ------------------------------------------------------------------------- */
+/* メインコンテナ関連 */
+/* ------------------------------------------------------------------------- */
+main {
+  position: relative;
+  display: flexbox;
+  flex: 1;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: var(--max-width-for-pc);
+  margin: 0 auto 1rem auto;
+  padding: 0.5rem;
+}
+
+.main-container {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 3px;
+  background-color: rgb(170 220 255 / 50%);
+  backdrop-filter: blur(2px);
+}
+
+/* メインプロダクトカード用コンテナ */
+.product-card-container {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(var(--product-card-min-width), 1fr));
+  grid-auto-rows: 1fr;
+}
+
+/* メインプロダクトカード */
+.product-card {
+  display: block;
+  box-sizing: border-box;
+  height: 100%;
+  padding: 0.5rem;
+  border: 1px solid var(--base-font-color);
+  border-radius: 3px;
+  background-color: rgb(255 255 255 / 40%);
+}
+
+.product-card > h3 {
+  margin: 0 0 0.5rem 0;
+  padding: 0 0 0.25em 0;
+  text-align: center;
+  border-bottom: 1px solid var(--base-font-color);
+}
+
+.product-card > p {
+  margin-bottom: 0;
+}
+
+/* タグリスト */
+ul.product-card__tags{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0;
+}
+
+ul.product-card__tags > li {
+  font-size: 0.9em;
+  white-space: nowrap;
+  list-style: none;
+  padding: 0.25em;
+  border: 1px solid var(--base-font-color);
+  border-radius: 3px;
+}
+
+/* リンクリスト */
+ul.product-card__link-list {
+  padding: 0.25em;
+}
+
+ul.product-card__link-list > li {
+  list-style: none;
+}
+
+/* ------------------------------------------------------------------------- */
+/* 汎用クラス関連 */
+/* ------------------------------------------------------------------------- */
+/* アクセシビリティに配慮した非表示 */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* アイコン用クラス */
+.icon::before {
+  display: inline-block;
+  content: attr(data-icon);
+
+  font-family: "Material Symbols Outlined";
+  font-weight: normal;
+  font-style: normal;
+  font-weight: bold;
+
+  vertical-align: bottom;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  margin-right: 0.15em;
+}
+
+.icon.fill {
+  font-variation-settings:
+    'FILL' 1;
+}
+
+/* ------------------------------------------------------------------------- */
+/* フッター関連 */
+/* ------------------------------------------------------------------------- */
+footer {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: var(--max-width-for-pc);
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* フッターリンク */
+.footer-link {
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em 1em;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-link > li {
+  list-style-type: none;
+  white-space: nowrap;
+}
+
+/* コピーライト */
+.copyright {
+  color: rgb(90 150 170);
+  font-size: 0.9rem;
+  margin: 0.25rem 0 0.5rem 0;
+}
+
+/* ------------------------------------------------------------------------- */
+/* 背景関連 */
+/* ------------------------------------------------------------------------- */
+/* 背景用要素 */
+/* canvasでも良いがcssのみでも低負荷で実現可能でjsの必要が無い */
+.bg-underwater {
+  position: fixed;
+  display: block;
+
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+
+  /* fallback for old browser */
+  background-color: rgb(10 75 120);
+
+  background-image:
+    radial-gradient(circle at 0% 0, rgb(230 250 255 / 50%) 0%, transparent 30%),
+    linear-gradient(160deg, rgb(0 175 235) 0%, rgb(10 75 120) 35%, rgb(0 25 85) 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  user-select: none;
+}
+
+/* 背景の水泡 */
+.bg-underwater__bubble {
+  position: absolute;
+  border-radius: 50%;
+
+  background: rgb(90 230 255 / 30%);
+  box-shadow: rgb(255 255 255 / 80%), 0 0 8px, rgb(0 200 255 / 50%);
+
+  opacity: 0;
+  animation: underwater-bubble-up 5s linear infinite;
+
+  user-select: none;
+}
+
+.bg-underwater .bubble-1 {
+  left: 5%;
+  bottom: -20px;
+  width: 12px;
+  height: 12px;
+  animation-delay: 0.4s;
+  animation-duration: 5s;
+}
+
+.bg-underwater .bubble-2 {
+  left: 15%;
+  bottom: -30px;
+  width: 20px;
+  height: 20px;
+
+  animation-delay: 2.2s;
+  animation-duration: 7s;
+}
+
+.bg-underwater .bubble-3 {
+  left: 36%;
+  bottom: -24px;
+  width: 16px;
+  height: 16px;
+
+  animation-delay: 1.2s;
+  animation-duration: 6s;
+}
+
+.bg-underwater .bubble-4 {
+  left: 63%;
+  bottom: -40px;
+  width: 12px;
+  height: 12px;
+
+  animation-delay: 0.4s;
+  animation-duration: 4s;
+}
+
+.bg-underwater .bubble-5 {
+  left: 81%;
+  bottom: -55px;
+  width: 22px;
+  height: 22px;
+
+  animation-delay: 3.2s;
+  animation-duration: 6s;
+}
+
+.bg-underwater .bubble-6 {
+  left: 36%;
+  bottom: -8px;
+  width: 6px;
+  height: 6px;
+
+  animation-delay: 2.0s;
+  animation-duration: 3.5s;
+}
+
+.bg-underwater .bubble-7 {
+  left: 95%;
+  bottom: -24px;
+  width: 8px;
+  height: 8px;
+
+  animation-delay: 1.1s;
+  animation-duration: 3.4s;
+}
+
+/* 水泡のアニメーション定義 */
+@keyframes underwater-bubble-up {
+  0% {
+    transform: translateY(0) translateX(0) scale(1, 1) rotate(0deg);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  25% {
+    transform: translateY(-25vh) translateX(15px) scale(0.8, 0.8) rotate(10deg);
+    opacity: 0.5;
+  }
+
+  50% {
+    transform: translateY(-50vh) translateX(-20px) scale(1, 1) rotate(-15deg);
+    opacity: 0.7;
+  }
+
+  75% {
+    transform: translateY(-75vh) translateX(10px) scale(0.9, 0.9) rotate(5deg);
+    opacity: 0.3;
+  }
+
+  100% {
+    transform: translateY(-110vh) translateX(-5px) scale(0.7, 0.7) rotate(0deg);
+    animation-timing-function: ease-out;
+    opacity: 0;
+  }
+}
