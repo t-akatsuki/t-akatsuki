@@ -1,0 +1,8 @@
+{
+  // フォーマッターとしてEditorConfigを利用する
+  "editor.defaultFormatter": "EditorConfig.EditorConfig",
+  // 保存時にフォーマットを適用
+  "editor.formatOnSave": true,
+  // LivePreviewでのドキュメントルート指定
+  "liveServer.settings.root": "/pages"
+}
