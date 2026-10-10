@@ -47,7 +47,7 @@ jobs:
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: top-langs
-          options: username=${{ github.repository_owner }}&layout=compact&langs_count=8&stats_format=percentages&hide=html,css$theme=shadow_blue
+          options: username=${{ github.repository_owner }}&layout=compact&langs_count=8&stats_format=percentages&hide=html,css,Makefile&theme=shadow_blue&locale=ja
           path: assets/profile/top-languages-card.svg
           token: ${{ secrets.PAT_TOKEN }}
           fail_on_error: true
@@ -58,7 +58,7 @@ jobs:
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: pin
-          options: username=${{ github.repository_owner }}&repo=UTA_MessageSkipMV&show_owner=false$theme=shadow_blue
+          options: username=${{ github.repository_owner }}&repo=UTA_MessageSkipMV&show_owner=false&theme=shadow_blue&locale=ja
           path: assets/profile/pin-card-UTA_MessageSkipMV.svg
           token: ${{ secrets.PAT_TOKEN }}
           fail_on_error: true
@@ -68,7 +68,7 @@ jobs:
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: pin
-          options: username=${{ github.repository_owner }}&repo=UTA_CommonSaveMV&show_owner=false$theme=shadow_blue
+          options: username=${{ github.repository_owner }}&repo=UTA_CommonSaveMV&show_owner=false&theme=shadow_blue&locale=ja
           path: assets/profile/pin-card-UTA_CommonSaveMV.svg
           token: ${{ secrets.PAT_TOKEN }}
           fail_on_error: true
@@ -78,7 +78,7 @@ jobs:
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: pin
-          options: username=${{ github.repository_owner }}&repo=UTA_EncounterControlMV&show_owner=false$theme=shadow_blue
+          options: username=${{ github.repository_owner }}&repo=UTA_EncounterControlMV&show_owner=false&theme=shadow_blue&locale=ja
           path: assets/profile/pin-card-UTA_EncounterControlMV.svg
           token: ${{ secrets.PAT_TOKEN }}
           fail_on_error: true
@@ -88,7 +88,7 @@ jobs:
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: pin
-          options: username=${{ github.repository_owner }}&repo=UTA_MessageSkipMZ&show_owner=false$theme=shadow_blue
+          options: username=${{ github.repository_owner }}&repo=UTA_MessageSkipMZ&show_owner=false&theme=shadow_blue&locale=ja
           path: assets/profile/pin-card-UTA_MessageSkipMZ.svg
           token: ${{ secrets.PAT_TOKEN }}
           fail_on_error: true
@@ -98,7 +98,7 @@ jobs:
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: pin
-          options: username=${{ github.repository_owner }}&repo=UTA_CommonSaveMZ&show_owner=false$theme=shadow_blue
+          options: username=${{ github.repository_owner }}&repo=UTA_CommonSaveMZ&show_owner=false&theme=shadow_blue&locale=ja
           path: assets/profile/pin-card-UTA_CommonSaveMZ.svg
           token: ${{ secrets.PAT_TOKEN }}
           fail_on_error: true
