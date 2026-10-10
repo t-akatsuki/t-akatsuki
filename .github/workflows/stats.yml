@@ -1,0 +1,114 @@
+---
+# =============================================================================
+# GitHub Readme Statsカードの生成用action
+# https://github.com/stats-organization/github-readme-stats-action
+# =============================================================================
+name: Generate gitHub readme stats assets
+on:
+  # 定期実行設定
+  schedule:
+    # 毎週日曜日4:00に実行させる
+    - cron: "0 4 * * 0"
+  # 主導トリガーで実行できるようにしておく
+  workflow_dispatch:
+
+# ワークフローのデフォルトパーミッションをすべて無効にしておく
+permissions: {}
+
+# デフォルト設定
+defaults:
+  run:
+    shell: bash
+
+# ワークフローが複数実行された場合は自動キャンセルさせる
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+# ジョブの定義
+jobs:
+  # GitHub Readme Stats Cardの生成とコミットを実行
+  # 他リポジトリを参照する為、Private Access Tokenを利用する
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    # 画像の生成とコミットを行うので書き込み権限付与
+    permissions:
+      contents: write
+
+    steps:
+      # リポジトリコードのチェックアウト
+      - name: Checkout repository
+        uses: actions/checkout@v7
+      
+      # 利用言語統計カードの生成
+      - name: Generate top languages card
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: top-langs
+          options: username=${{ github.repository_owner }}&layout=compact&langs_count=8&stats_format=percentages&hide=html,css$theme=shadow_blue
+          path: assets/profile/top-languages-card.svg
+          token: ${{ secrets.PAT_TOKEN }}
+          fail_on_error: true
+
+      # pinカードの生成
+      ## UTA_MessageSkipMV
+      - name: Generate pin card UTA_MessageSkipMV
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: pin
+          options: username=${{ github.repository_owner }}&repo=UTA_MessageSkipMV&show_owner=false$theme=shadow_blue
+          path: assets/profile/pin-card-UTA_MessageSkipMV.svg
+          token: ${{ secrets.PAT_TOKEN }}
+          fail_on_error: true
+
+      ## UTA_CommonSaveMV
+      - name: Generate pin card UTA_CommonSaveMV
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: pin
+          options: username=${{ github.repository_owner }}&repo=UTA_CommonSaveMV&show_owner=false$theme=shadow_blue
+          path: assets/profile/pin-card-UTA_CommonSaveMV.svg
+          token: ${{ secrets.PAT_TOKEN }}
+          fail_on_error: true
+
+      ## UTA_EncounterControlMV
+      - name: Generate pin card UTA_EncounterControlMV
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: pin
+          options: username=${{ github.repository_owner }}&repo=UTA_EncounterControlMV&show_owner=false$theme=shadow_blue
+          path: assets/profile/pin-card-UTA_EncounterControlMV.svg
+          token: ${{ secrets.PAT_TOKEN }}
+          fail_on_error: true
+
+      ## UTA_MessageSkipMZ
+      - name: Generate pin card UTA_MessageSkipMZ
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: pin
+          options: username=${{ github.repository_owner }}&repo=UTA_MessageSkipMZ&show_owner=false$theme=shadow_blue
+          path: assets/profile/pin-card-UTA_MessageSkipMZ.svg
+          token: ${{ secrets.PAT_TOKEN }}
+          fail_on_error: true
+
+      ## UTA_CommonSaveMZ
+      - name: Generate pin card UTA_CommonSaveMZ
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: pin
+          options: username=${{ github.repository_owner }}&repo=UTA_CommonSaveMZ&show_owner=false$theme=shadow_blue
+          path: assets/profile/pin-card-UTA_CommonSaveMZ.svg
+          token: ${{ secrets.PAT_TOKEN }}
+          fail_on_error: true
+
+      # 生成したファイルのコミット
+      - name: Commit and push generated assets
+        run: |
+          set -x
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/profile/*.svg
+          git commit -m "update: Update github readme stats cards." || exit 1
+          git push || { echo "'git push' command failed, but error is ignored as it may be environment issue." 1>&2 ; exit 0; }
