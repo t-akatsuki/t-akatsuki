@@ -43,63 +43,117 @@ jobs:
         uses: actions/checkout@v7
       
       # 利用言語統計カードの生成
-      - name: Generate top languages card
+      - name: Generate top languages card light
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: top-langs
-          options: username=${{ github.repository_owner }}&layout=compact&langs_count=8&stats_format=percentages&hide=html,css,Makefile&theme=shadow_blue&locale=ja
-          path: assets/profile/top-languages-card.svg
+          options: username=${{ github.repository_owner }}&layout=compact&langs_count=8&stats_format=percentages&hide=html,css,Makefile&theme=light_github_repocard&locale=ja
+          path: assets/profile/top-languages-card-light.svg
+          token: ${{ secrets.PAT_TOKEN }}
+          fail_on_error: true
+
+      - name: Generate top languages card dark
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: top-langs
+          options: username=${{ github.repository_owner }}&layout=compact&langs_count=8&stats_format=percentages&hide=html,css,Makefile&theme=dark_github_repocard&locale=ja
+          path: assets/profile/top-languages-card-dark.svg
           token: ${{ secrets.PAT_TOKEN }}
           fail_on_error: true
 
       # pinカードの生成
       ## UTA_MessageSkipMV
-      - name: Generate pin card UTA_MessageSkipMV
+      - name: Generate pin card UTA_MessageSkipMV light
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: pin
-          options: username=${{ github.repository_owner }}&repo=UTA_MessageSkipMV&show_owner=false&theme=shadow_blue&locale=ja
-          path: assets/profile/pin-card-UTA_MessageSkipMV.svg
+          options: username=${{ github.repository_owner }}&repo=UTA_MessageSkipMV&show_owner=false&theme=light_github_repocard&locale=ja
+          path: assets/profile/pin-card-UTA_MessageSkipMV-light.svg
+          token: ${{ secrets.PAT_TOKEN }}
+          fail_on_error: true
+
+      - name: Generate pin card UTA_MessageSkipMV dark
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: pin
+          options: username=${{ github.repository_owner }}&repo=UTA_MessageSkipMV&show_owner=false&theme=dark_github_repocard&locale=ja
+          path: assets/profile/pin-card-UTA_MessageSkipMV-dark.svg
           token: ${{ secrets.PAT_TOKEN }}
           fail_on_error: true
 
       ## UTA_CommonSaveMV
-      - name: Generate pin card UTA_CommonSaveMV
+      - name: Generate pin card UTA_CommonSaveMV light
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: pin
-          options: username=${{ github.repository_owner }}&repo=UTA_CommonSaveMV&show_owner=false&theme=shadow_blue&locale=ja
-          path: assets/profile/pin-card-UTA_CommonSaveMV.svg
+          options: username=${{ github.repository_owner }}&repo=UTA_CommonSaveMV&show_owner=false&theme=light_github_repocard&locale=ja
+          path: assets/profile/pin-card-UTA_CommonSaveMV-light.svg
+          token: ${{ secrets.PAT_TOKEN }}
+          fail_on_error: true
+
+      - name: Generate pin card UTA_CommonSaveMV dark
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: pin
+          options: username=${{ github.repository_owner }}&repo=UTA_CommonSaveMV&show_owner=false&theme=dark_github_repocard&locale=ja
+          path: assets/profile/pin-card-UTA_CommonSaveMV-dark.svg
           token: ${{ secrets.PAT_TOKEN }}
           fail_on_error: true
 
       ## UTA_EncounterControlMV
-      - name: Generate pin card UTA_EncounterControlMV
+      - name: Generate pin card UTA_EncounterControlMV light
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: pin
-          options: username=${{ github.repository_owner }}&repo=UTA_EncounterControlMV&show_owner=false&theme=shadow_blue&locale=ja
-          path: assets/profile/pin-card-UTA_EncounterControlMV.svg
+          options: username=${{ github.repository_owner }}&repo=UTA_EncounterControlMV&show_owner=false&theme=light_github_repocard&locale=ja
+          path: assets/profile/pin-card-UTA_EncounterControlMV-light.svg
+          token: ${{ secrets.PAT_TOKEN }}
+          fail_on_error: true
+
+      - name: Generate pin card UTA_EncounterControlMV dark
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: pin
+          options: username=${{ github.repository_owner }}&repo=UTA_EncounterControlMV&show_owner=false&theme=dark_github_repocard&locale=ja
+          path: assets/profile/pin-card-UTA_EncounterControlMV-dark.svg
           token: ${{ secrets.PAT_TOKEN }}
           fail_on_error: true
 
       ## UTA_MessageSkipMZ
-      - name: Generate pin card UTA_MessageSkipMZ
+      - name: Generate pin card UTA_MessageSkipMZ light
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: pin
-          options: username=${{ github.repository_owner }}&repo=UTA_MessageSkipMZ&show_owner=false&theme=shadow_blue&locale=ja
-          path: assets/profile/pin-card-UTA_MessageSkipMZ.svg
+          options: username=${{ github.repository_owner }}&repo=UTA_MessageSkipMZ&show_owner=false&theme=light_github_repocard&locale=ja
+          path: assets/profile/pin-card-UTA_MessageSkipMZ-light.svg
+          token: ${{ secrets.PAT_TOKEN }}
+          fail_on_error: true
+
+      - name: Generate pin card UTA_MessageSkipMZ dark
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: pin
+          options: username=${{ github.repository_owner }}&repo=UTA_MessageSkipMZ&show_owner=false&theme=dark_github_repocard&locale=ja
+          path: assets/profile/pin-card-UTA_MessageSkipMZ-dark.svg
           token: ${{ secrets.PAT_TOKEN }}
           fail_on_error: true
 
       ## UTA_CommonSaveMZ
-      - name: Generate pin card UTA_CommonSaveMZ
+      - name: Generate pin card UTA_CommonSaveMZ light
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: pin
-          options: username=${{ github.repository_owner }}&repo=UTA_CommonSaveMZ&show_owner=false&theme=shadow_blue&locale=ja
-          path: assets/profile/pin-card-UTA_CommonSaveMZ.svg
+          options: username=${{ github.repository_owner }}&repo=UTA_CommonSaveMZ&show_owner=false&theme=light_github_repocard&locale=ja
+          path: assets/profile/pin-card-UTA_CommonSaveMZ-light.svg
+          token: ${{ secrets.PAT_TOKEN }}
+          fail_on_error: true
+
+      - name: Generate pin card UTA_CommonSaveMZ dark
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: pin
+          options: username=${{ github.repository_owner }}&repo=UTA_CommonSaveMZ&show_owner=false&theme=dark_github_repocard&locale=ja
+          path: assets/profile/pin-card-UTA_CommonSaveMZ-dark.svg
           token: ${{ secrets.PAT_TOKEN }}
           fail_on_error: true
 
