@@ -103,5 +103,3 @@
 
 - <a href="https://www.utakata-no-yume.net" target="_blank">うたかたの夢跡</a>
 - <a href="https://pages.github.utakata-no-yume.net/" target="_blank">うたかたの夢跡GitHubポータル</a>
-- <a href="https://x.com/t_akatsuki" target="_blank">X(Twitter)</a>
-- <a href="https://bsky.app/profile/t-akatsuki.utakata-no-yume.net" target="_blank">Bluesky</a>
