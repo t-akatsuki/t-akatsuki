@@ -69,21 +69,28 @@
 ## :zap: Skill Stack
 
 アプリケーション開発からWeb開発まで半フルスタックで頑張っています。  
-興味あるものは積極的に雑多に色々触っています!
+興味あるものは積極的に雑多に色々触っています！
 
 ### :computer: Desktop Application Development Skills
 
 <picture>
-  <source srcset="https://skillicons.dev/icons?i=cpp,cs,visualstudio" media="(*)">
-  <img src="https://skillicons.dev/icons?i=cpp,cs,visualstudio" alt="Desktop Application Development Skills">
+  <source srcset="https://skillicons.dev/icons?i=cpp,cs,electron,qt,visualstudio" media="(*)">
+  <img src="https://skillicons.dev/icons?i=cpp,cs,electron,qt,visualstudio" alt="Desktop Application Development Skills">
 </picture>
+
+- ややブランクがありますが、Windows向けデスクトップアプリも開発していました。
+- 現在は簡単なツールや業務効率化ツールなどを Python + PySide(Qt) や TypeScript + Electron などで作成する事もあります。
 
 ### :spaghetti: Web Frontend Development Skills
 
 <picture>
-  <source srcset="https://skillicons.dev/icons?i=html,css,sass,js,ts,electron,vscode" media="(*)">
-  <img src="https://skillicons.dev/icons?i=html,css,sass,js,ts,electron,vscode" alt="Web Frontend Development Skills">
+  <source srcset="https://skillicons.dev/icons?i=html,css,sass,js,ts,vscode" media="(*)">
+  <img src="https://skillicons.dev/icons?i=html,css,sass,js,ts,vscode" alt="Web Frontend Development Skills">
 </picture>
+
+- RPGツクールMV/MZ用プラグイン開発ではモダン環境と相性が悪い(様々な理由がある)ので、あえて Vanilla JS で記述しています。
+- Webアプリケーションにおいて、フロントエンド/バックエンドどちらに寄せるかはチームや要件、文化によって異なるので、ケースバイケースでやっています。
+- 最近は WebAssembly に手を出したい気がしている。
 
 ### :ramen: Web Backend Development Skills
 
@@ -92,12 +99,19 @@
   <img src="https://skillicons.dev/icons?i=py,django,flask,php,mysql,postgres,vscode" alt="Web Backend Development Skills">
 </picture>
 
+- アプリケーションの設計開発の他に、技術選定や概念設計などのアーキテクト的な事も行っています。
+- 特定のフレームワークや言語というより、要件や特性に合わせて利用するものを決めることが多いです。
+
 ### :cloud: Infrastuructures/IaC Skills
 
 <picture>
   <source srcset="https://skillicons.dev/icons?i=aws,docker,ansible" media="(*)">
   <img src="https://skillicons.dev/icons?i=aws,docker,ansible" alt="Infrastuructures/IaC Skills">
 </picture>
+
+- DockerはWebアプリケーション開発の他、開発環境などでも活用しています。
+- AWSなどのクラウド環境も良く利用しており、AWS CloudFormation や AWS CDK による構成管理も開発と併せて活用しています。
+- 運用もある程度経験がありますが、レガシー環境などではAnsibleなどの構成管理ツールを利用するなどしています。
 
 ## :link: Links
 
