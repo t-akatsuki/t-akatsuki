@@ -159,11 +159,14 @@ jobs:
           fail_on_error: true
 
       # 生成したファイルのコミット
+      # 変更が無い場合は何もせず終了する
+      # 新規の未追跡ファイルにも対応できるように判定する
       - name: Commit and push generated assets
         run: |
           set -x
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add assets/profile/*.svg
+          if git diff-index --quiet HEAD -- assets/profile/; then { echo "No changes detected."; exit 0; }; fi
           git commit -m "update: Update github readme stats cards." || exit 1
           git push || { echo "'git push' command failed, but error is ignored as it may be environment issue." 1>&2 ; exit 0; }
