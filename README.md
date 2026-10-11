@@ -12,7 +12,7 @@
 > ユーザー向け制作物の配布および利用方法の解説は<a href="https://www.utakata-no-yume.net" target="_blank">Webサイト</a>にて実施しております。
 
 > [!NOTE]
-> RPGツクールMv/MZ用プラグインのバグ報告などについては<a href="https://www.utakata-no-yume.net/contact/rpgmvmz/" target="_blank">Webサイトのお問い合わせフォーム</a>からお願いいたします。
+> RPGツクールMv/MZ用プラグインのバグ報告などについては<a href="https://www.utakata-no-yume.net/contact/rpgmvz/" target="_blank">Webサイトのお問い合わせフォーム</a>からお願いいたします。
 
 ### :electric_plug: RPGツクールMZ(RPGMakerMZ)用プラグイン
 
