@@ -9,6 +9,7 @@ on:
   schedule:
     # 毎週日曜日4:00に実行させる
     - cron: "0 4 * * 0"
+      timezone: "Asia/Tokyo"
   # 主導トリガーで実行できるようにしておく
   workflow_dispatch:
 
